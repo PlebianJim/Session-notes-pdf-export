@@ -7,7 +7,7 @@
 }
 
 body {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "Audiowide", sans-serif;
     background: rgb(255,255,255);
     background: radial-gradient(circle, rgb(255,255,255) 0%, rgba(54,132,223,1) 100%);
 }
