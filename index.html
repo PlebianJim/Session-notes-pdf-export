@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
+</head>
+<body onload="time()">
+    <div class="todo-container">
+        <div class="date-hour">
+            <p id="date"></p>
+            <p id="hour"></p>
+        </div>
+
+        <header>
+            <h1>Session Notes</h1>
+        </header>
+        <!--Add todo task-->
+        <form action="" id="todo-form">
+            <p>Type your session notes here. Leave this window open or you will lose your notes</p>
+            <div class="form-control">
+                <input type="text" id="todo-input" placeholder="Notes appear here">
+                <button type="submit" style="border: 1px solid black; margin: 1%;">Add
+                    <i class="fa-thin fa-plus"></i>
+                </button>
+                <button id="export-pdf" style="border: 1px solid black; margin: 1%;">Export
+                    <i class="fa-thin fa-plus"></i>
+                </button>
+            </div>
+        </form>
+        <!--Edit the tasks-->
+        <form action="" id="edit-form" class="hide">
+            <p>Edit your task</p>
+            <div class="form-control">
+                <input type="text" id="edit-input" placeholder="Type here about your task">
+                <button type="submit">
+                    <i class="fa-solid fa-check-double"></i>
+                </button>
+            </div>
+            <button type="button" id="cancel-edit-btn">Cancel</button>
+        </form>
+
+        <!--Display Todo list-->
+        <div class="todo-list" id="todo-list">
+            <div class="todo">
+                <button class="finish-todo">
+                    <i class="fa-solid fa-check"></i>
+                </button>
+                <button class="edit-todo">
+                    <i class="fa-solid fa-pen"></i>
+                </button>
+                <button class="remove-todo">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
