@@ -1,12 +1,13 @@
 /*===== Universal Selectors =====*/
 
-@import url(//fonts.googleapis.com/css2?family=Audiowide&display=swap)
+
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: "Audiowide", sans-serif;
+    @import url(//fonts.googleapis.com/css2?family=Audiowide&display=swap) /*required for github pages to correctly show the selected font */
 }
 
 body {
